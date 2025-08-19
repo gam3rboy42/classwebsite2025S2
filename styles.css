@@ -1,0 +1,30 @@
+body{
+    background-color: crimson;
+    color: rgb(255, 204, 0);
+    font-family: comic-reilief, Comic-Neue,comic-sans, sans-serif;
+}
+a{
+    font-size: 200%;
+}
+a:link{
+    color: chartreuse;
+ } 
+ 
+ a:visited{
+    color: rgb(255, 255, 255);
+}
+ a:hover{
+    color: black;
+}
+ a:active{
+    color: darkgoldenrod;
+ }
+ h1{
+    color: blueviolet;
+    font-size: 200%;
+    background-color: darkblue;
+ }
+ img{
+    max-width: 100%
+ }
+ 

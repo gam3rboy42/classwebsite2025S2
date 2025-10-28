@@ -1,4 +1,11 @@
-
+:root {
+    --alabaster: hsla(77, 11%, 87%, 1);
+    --timberwolf: hsla(70, 12%, 81%, 1);
+    --ash-gray: hsla(98, 6%, 73%, 1);
+    --cadet-gray: hsla(180, 6%, 56%, 1);
+    --hookers-green: hsla(169, 10%, 25%, 1);
+    color-scheme: light dark;
+}
 @media screen and (max-width: 480px) {
     .logo {
         max-width:40px;
@@ -10,6 +17,7 @@
         justify-content: flex-start;
         padding-left: 5px;
         padding-right: 5px;
+        position: relative;
     }
     .nav-button {
         display: block;
@@ -32,7 +40,14 @@
         overflow: hidden;
         transition: max-height 0.5s;
         flex-wrap: nowrap;
+        position: absolute;
+        top: 100%;
+        left: 0px;
+        min-width: 100%;
+        background-color: var(--cadet-gray);
+        z-index: 999;
     }
+    
     #main.open{
         max-height: 50vh;
     }

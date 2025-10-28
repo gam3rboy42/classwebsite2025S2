@@ -7,8 +7,10 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <script src="script.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 </head>
 
 <body>
@@ -17,7 +19,7 @@
             <img src="Images/burger.svg">
             </button> 
            
-        
+
         <a href="index.html">
             <img class="logo" src="images/TipToe Soles_Logo.png" alt="tiptoe soles logo">
         </a>
@@ -53,8 +55,25 @@
 
         </nav>
     </header>
-    <h1>Home Page</h1>
-    <img class="home-image" src="forest.jpg" alt="green forest">
+    <!--banner-->
+    <div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true }'>
+    <div class="slide">
+        <h2>Hallowen Sale</h2>
+        <button>Shop Hallowen</button>
+    </div>
+    <div class="slide">
+        <h2>Black Friday</h2>
+        <button>Shop Black Friday</button>
+    </div>
+    <div class="slide">
+        <h2>Cyber Monday</h2>
+        <button>Shop Cyber Monday</button>
+    </div>
+    <div class="slide">
+        <h2>four</h2>
+    </div>
+    </div>
+    <h1>Home Page</h1>lass="home-image" src="forest.jpg" alt="green forest">
 </body>
 
 </html>

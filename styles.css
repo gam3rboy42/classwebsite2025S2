@@ -12,6 +12,10 @@ body {
     color: var(--hookers-green);
     font-family: Arial, Helvetica, sans-serif;
     margin: 0px;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto auto 1fr auto ;
+
 }
 
 a {
@@ -133,9 +137,7 @@ img {
     overflow: hidden;
 }
 @media screen and (max-width: 420px){
-   .logo{
-      max-width: 70px;
-   }
+  
    
 }
 .sr-only {
@@ -157,6 +159,7 @@ overflow:hidden;
     min-height: 50vh;
     background-color: var(--timberwolf);
     background-position: center;
+    background-size: cover;
 }
 .slide h2{
     font-size: 3.5em;
@@ -174,3 +177,34 @@ overflow:hidden;
         background-image: url(Images/Halloween.jpg);
         color: orange;
     }
+nav a{
+    text-decoration: none;
+}
+.main-footer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    background-color: var(--cadet-gray);    
+    padding: 20px 30px;
+    margin-top: 30px;
+}
+.footer-nav {
+    display: flex;
+    flex-direction: column;
+}
+.footer-nav a, .social-nav a, .legal-nav a{
+    color: var(--alabaster);
+    padding: 5px;
+}
+.social-nav {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    font-size: 120%;
+}
+.legal-nav{
+    min-width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 3em;
+}

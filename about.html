@@ -2,21 +2,168 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Page</title>
-    <link rel="icon" href="icon.webp">
+    <title>About Tiptoe Soles</title>
+    <link rel="icon" href="images/TipToe Soles_Logo.png">
     <link rel="stylesheet" href="styles.css">
-
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 </head>
 
 <body>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-    </nav>
-    <h1>About Page</h1>
-    <img class="about image" src=beach.jpg alt="beach"> 
+    <header class="page-header">
+        <button class="nav-button" id="menu-button">
+            <img src="images/burger.svg">
+        </button>
+        <a href="index.html" class="logo-link">
+            <img class="logo" src="images/TipToe_Soles_Logo.png" alt="tiptoe soles logo">
+        </a>
+        <!-- category menu -->
+        <nav class="navigation" id="main">
+            <a href="men.html">Men</a>
+            <a href="women.html">Women</a>
+            <a href="accessories.html">Accessories</a>
+            <a href="services.html">Services</a>
+        </nav>
+        <!-- search form -->
+        <form id="search" method="get" action="/formdata">
+            <input type="search" name="keywords" id="keywords" placeholder="Search for a product">
+            <button type="submit">
+                <img src="images/search-icon.svg">
+            </button>
+        </form>
+        <nav class="navigation" id="user-nav">
+            <a href="account.html">
+                <i class="fa-solid fa-user"></i>
+                <span class="sr-only">Account</span>
+            </a>
+            <a href="wishlist.html">
+                <i class="fa-solid fa-heart"></i>
+                <span class="sr-only">Wishlist</span>
+            </a>
+            <a href="cart.html">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <span class="sr-only">Shopping Bag</span>
+            </a>
+        </nav>
+    </header>
+    <!-- banner -->
+    <div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true }'>
+        <div class="slide">
+            <h2>Halloween Sales</h2>
+            <button>Shop Halloween</button>
+        </div>
+        <div class="slide">
+            <h2>Black Friday</h2>
+            <button>Shop Black Friday</button>
+        </div>
+        <div class="slide">
+            <h2>Cyber Monday</h2>
+            <button>Shop Cyber Monday</button>
+        </div>
+        <div class="slide">
+            <h2>Four</h2>
+        </div>
+    </div>
+    <main class="main-content">
+        <div class="card-container contact">
+            <div class="card">
+                <img src="images/Liam.png" alt="Liam our founder">
+                <div class="card-content">
+                    <h3>Tiptoe Soles: Born on the Northern Beaches</h3>
+
+                    <p>Tiptoe Soles was conceived in 2003, not in a factory, but in a small, sun-drenched shed
+                        overlooking Manly Beach. Liam O’Connell, a former lifeguard and self-taught leatherworker, was
+                        tired of uncomfortable, imported shoes that couldn't handle the harsh Australian sun and endless
+                        coastal tracks. His vision was to craft footwear that embodied the nation's relaxed, durable
+                        spirit.</p>
+
+                    <p>Liam sourced tough, breathable canvas and pioneered the use of recycled materials, designing a
+                        shoe specifically for the Australian foot—supportive enough for a bushwalk, but cool enough for
+                        a Sydney cafe. The brand quickly grew by word-of-mouth, appealing to locals who valued quality,
+                        comfort, and an authentic, homegrown aesthetic. Today, Tiptoe Soles remains committed to its
+                        roots, designing every pair in Sydney to be the perfect, laid-back companion for the Australian
+                        market.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/Factory.png" alt="our factory will never give you up">
+                <div class="card-content">
+                    <h3>The Workshop: Crafting Soles in Sydney’s Inner West</h3>
+
+                    <p>After years in the humble Manly shed, Liam O’Connell knew Tiptoe Soles needed a proper home, but
+                        one that stayed true to their coastal values. In 2010, the company moved production to a
+                        repurposed warehouse in the inner west suburb of Marrickville—a hub known for its creative
+                        industries and industrial past.</p>
+
+                    <p>The "factory," affectionately nicknamed 'The Workshop,' is less of a cold industrial space and
+                        more of a sunlit collective. It features custom-built, low-energy machinery and uses rainwater
+                        harvesting to minimize its footprint. Every stitch is handled by a small team of master
+                        craftspeople, many of whom are lifelong Sydney locals. They oversee the careful integration of
+                        recycled rubber soles and organic canvas, ensuring each shoe meets Liam’s original standard for
+                        Australian durability and comfort. The Marrickville Workshop is the beating heart of Tiptoe
+                        Soles, proving that world-class, ethical manufacturing can thrive right here in Sydney.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/Community.png" alt="tiptoe soles in the community">
+                <div class="card-content">
+                    <h3>Core Values of Tiptoe Soles</h3>
+
+                    <p>Tiptoe Soles operates on three foundational principles, stemming directly from Liam O’Connell’s
+                        original Manly shed vision.</p>
+
+                    <p>Firstly, Authentic Australian Craftsmanship guides everything we do. We are committed to Sydney,
+                        utilizing our small team of local master craftspeople in The Workshop to ensure every stitch
+                        embodies dedication and quality that only local manufacturing can provide.</p>
+
+                    <p>Secondly, Radical Sustainability is non-negotiable. We believe in building shoes, not waste,
+                        pioneering the use of recycled rubber and organic canvas. We employ low-energy machinery and
+                        utilize rainwater harvesting to minimize our environmental footprint.</p>
+
+                    <p>Finally, we prioritize Uncompromising Comfort and Durability. Our shoes are engineered
+                        specifically for the varied Australian lifestyle—tough enough for a bushwalk, yet comfortable
+                        and cool enough to be the reliable, laid-back companion for every adventure and cafe visit.</p>
+                </div>
+
+            </div>
+        </div>
+    </main>
+    <footer class="main-footer">
+        <nav class="footer-nav">
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="#">Policies</a>
+        </nav>
+        <nav class="social-nav">
+            <a href="https://facebook.com">
+                <i class="fa-brands fa-facebook"></i>
+                <span class="sr-only">Facebook</span>
+            </a>
+            <a href="https://instagram.com">
+                <i class="fa-brands fa-square-instagram"></i>
+                <span class="sr-only">Facebook</span>
+            </a>
+            <a href="https://tiktok.com">
+                <i class="fa-brands fa-tiktok"></i>
+                <span class="sr-only">TikTok</span>
+            </a>
+            <a href="https://linkedin.com">
+                <i class="fa-brands fa-linkedin"></i>
+                <span class="sr-only">LinkedIn</span>
+            </a>
+        </nav>
+        <nav class="legal-nav">
+            <a href="#">Copyright</a>
+            <a href="#">Terms and Conditions</a>
+            <a href="#">Privacy</a>
+        </nav>
+    </footer>
 </body>
 
 </html>

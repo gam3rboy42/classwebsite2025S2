@@ -196,6 +196,7 @@ nav a {
     display: flex;
     flex-direction: row;
     gap: 3em;
+    flex-wrap: wrap;
 }
 
 /* content */
@@ -238,4 +239,24 @@ nav a {
     /* background: linear-gradient( 45deg,brown,yellow,green ); */
     background: radial-gradient(circle,brown,yellow);
     margin-top: 1em;
+}
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+.contact-form input, 
+.contact-form textarea {
+    margin-bottom: 0.5em;
+}
+.row {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.contact-form button {
+    min-width: auto;
+}
+.contact-details a {
+    color: var(--hookers-green);
+    font-size: medium;
 }

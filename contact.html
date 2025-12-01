@@ -21,7 +21,7 @@
             <img src="images/burger.svg">
         </button>
         <a href="index.html" class="logo-link">
-            <img class="logo" src="images/TipToe Soles_Logo.png" alt="tiptoe soles logo">
+            <img class="logo" src="images/TipToe_Soles_Logo_colour.png" alt="tiptoe soles logo">
         </a>
         <!-- category menu -->
         <nav class="navigation" id="main">
@@ -31,7 +31,7 @@
             <a href="services.html">Services</a>
         </nav>
         <!-- search form -->
-        <form id="search" method="get" action="">
+        <form id="search" method="get" action="/formdata">
             <input type="search" name="keywords" id="keywords" placeholder="Search for a product">
             <button type="submit">
                 <img src="images/search-icon.svg">
@@ -71,26 +71,54 @@
         </div>
     </div>
     <main class="main-content">
-        <div class="contact">
-            <div class="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6629.286113725889!2d151.18250110181663!3d-33.82152332877984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12af1fe3b9b887%3A0x6fda02f3cc79cba1!2sTAFE%20NSW%20-%20St%20Leonards!5e0!3m2!1sen!2sau!4v1762216361884!5m2!1sen!2sau" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="card-container contact">
+            <div class="card">
+                <!-- map -->
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6629.286113725889!2d151.18250110181663!3d-33.82152332877984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12af1fe3b9b887%3A0x6fda02f3cc79cba1!2sTAFE%20NSW%20-%20St%20Leonards!5e0!3m2!1sen!2sau!4v1762216361884!5m2!1sen!2sau"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-            <div class="address">
-                <h3>Our Location</h3>
-                <address>
-                    213 Pacific Hwy, St Leonards NSW 2065
-                </address>
+            <div class="card">
+                <!-- form -->
+                <div class="card-content">
+                    <form method="post" action="https://example.com/form" class="contact-form">
+                        <h3>Contact Us</h3>
+                        <label for="username">Name</label>
+                        <input id="username" type="text" name="username" placeholder="Jane Smith">
+                        <label for="email">Email Address</label>
+                        <input id="email" type="email" name="email" placeholder="you@example.com">
+                        <div class="row">
+                            <input type="checkbox" id="spam" checked>
+                            <label for="spam">Yes I like spam</label>
+                        </div>
+                        <label for="message">Message</label>
+                        <textarea rows="5" cols="30" id="message" placeholder="Hi there"></textarea>
+                        <div class="row">
+                            <button type="reset">Cancel</button>
+                            <button type="submit">Send</button>
+                        </div>
+                    </form>
+                </div>
             </div>
-            <form method="post" action="https://example.com/form" class="contact-form">
-                <label for="username">Name</label>
-                <input id="username" type="text" name="username" placeholder="Jane Smith">
-                <label for="email">Email Address</label>
-                <input id="email" type="email" name="email" placeholder="you@example.com">
-                <input type="checkbox" id="spam" checked>
-                <label for="spam">Yes I like spam</label>
-                <label for="message">Message</label>
-                <textarea rows="5" cols="30" id="message" placeholder="Hi there"></textarea>
-            </form>
+            <div class="card">
+                <!-- address -->
+                <div class="card-content">
+                    <h3>Address:</h3>
+                    <address>
+                        322 Avondale Road
+                        Enfield NSW 2133
+                    </address>
+                    <h3>Customer Service:</h3>
+                    <p class="contact-details">
+                        Telephone: <a href="tel:0292105000">02 9210 5000</a>
+                        <br>
+                        Email us at: <a href="mailto:TipToeShoes@gmail.com">TipToeShoes@gmail.com</a>
+                    </p>
+
+                </div>
+
+            </div>
         </div>
     </main>
     <footer class="main-footer">
